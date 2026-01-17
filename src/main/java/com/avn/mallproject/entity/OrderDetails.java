@@ -1,12 +1,8 @@
 package com.avn.mallproject.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
+import java.util.List;
+
+import jakarta.persistence.*;
 
 @Entity
 public class OrderDetails {
@@ -15,14 +11,66 @@ public class OrderDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long orderId;
 
-    private Double totalAmount;
-    private String paymentMode;
     private String orderStatus;
+    private String paymentMode;
+    private double totalAmount;
 
-     @ManyToOne
+    // Customer → OrderDetails (Many Orders belong to One Customer)
+    @ManyToOne
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
+    // OrderDetails → Item (One Order has Many Items)
     @OneToMany(mappedBy = "order")
     private List<Item> items;
+
+    // getters and setters
+
+    public Long getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(Long orderId) {
+        this.orderId = orderId;
+    }
+
+    public String getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = orderStatus;
+    }
+
+    public String getPaymentMode() {
+        return paymentMode;
+    }
+
+    public void setPaymentMode(String paymentMode) {
+        this.paymentMode = paymentMode;
+    }
+
+    public double getTotalAmount() {
+        return totalAmount;
+    }
+
+    public void setTotalAmount(double totalAmount) {
+        this.totalAmount = totalAmount;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
 }
