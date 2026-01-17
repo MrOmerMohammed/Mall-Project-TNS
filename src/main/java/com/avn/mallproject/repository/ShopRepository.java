@@ -1,5 +1,9 @@
 package com.avn.mallproject.repository;
 
-public interface ShopRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
 
+import com.avn.mallproject.entity.Shop;
+
+public interface ShopRepository extends JpaRepository<Shop, Long> {
 }
+

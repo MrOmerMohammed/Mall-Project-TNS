@@ -1,5 +1,9 @@
 package com.avn.mallproject.repository;
 
-public interface EmployeeRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
 
+import com.avn.mallproject.entity.Employee;
+
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 }
+

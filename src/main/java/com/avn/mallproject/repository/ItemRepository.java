@@ -1,5 +1,8 @@
 package com.avn.mallproject.repository;
 
-public interface ItemRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
 
+import com.avn.mallproject.entity.Item;
+
+public interface ItemRepository extends JpaRepository<Item, Long> {
 }

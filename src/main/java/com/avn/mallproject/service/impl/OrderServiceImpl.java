@@ -1,5 +1,7 @@
 package com.avn.mallproject.service.impl;
 
-public class OrderServiceImpl {
+import com.avn.mallproject.service.OrderService;
+
+public class OrderServiceImpl implements OrderService {
 
 }

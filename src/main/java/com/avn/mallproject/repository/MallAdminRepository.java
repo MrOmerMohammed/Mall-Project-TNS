@@ -1,5 +1,9 @@
 package com.avn.mallproject.repository;
 
-public interface MallAdminRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
 
+import com.avn.mallproject.entity.MallAdmin;
+
+public interface MallAdminRepository extends JpaRepository<MallAdmin, Long> {
 }
+

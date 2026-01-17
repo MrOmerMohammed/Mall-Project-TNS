@@ -1,5 +1,7 @@
 package com.avn.mallproject.service.impl;
 
-public class CustomerServiceImpl {
+import com.avn.mallproject.service.CustomerService;
+
+public class CustomerServiceImpl implements CustomerService{
 
 }
