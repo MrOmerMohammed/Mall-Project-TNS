@@ -9,7 +9,7 @@ import com.avn.mallproject.entity.Item;
 import com.avn.mallproject.service.ItemService;
 
 @RestController
-@RequestMapping("/items")
+@RequestMapping("/api/items")
 public class ItemController {
 
     @Autowired
@@ -18,7 +18,7 @@ public class ItemController {
     // Add item to shop
     @PostMapping("/shop/{shopId}")
     public Item addItemToShop(@PathVariable Long shopId,
-                              @RequestBody Item item) {
+            @RequestBody Item item) {
         return itemService.addItemToShop(shopId, item);
     }
 

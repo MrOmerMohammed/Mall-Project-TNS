@@ -33,9 +33,10 @@ public class Shop {
 
     @OneToMany(mappedBy = "shop")
     private List<Employee> employees;
-    
 
-    
+    @OneToMany(mappedBy = "shop")
+    private List<OrderDetails> orders;
+
     // Getters and Setters
     public Long getShopId() {
         return shopId;
@@ -67,5 +68,45 @@ public class Shop {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public Mall getMall() {
+        return mall;
+    }
+
+    public void setMall(Mall mall) {
+        this.mall = mall;
+    }
+
+    public ShopOwner getShopOwner() {
+        return shopOwner;
+    }
+
+    public void setShopOwner(ShopOwner shopOwner) {
+        this.shopOwner = shopOwner;
+    }
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
+
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
+    }
+
+    public List<OrderDetails> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<OrderDetails> orders) {
+        this.orders = orders;
     }
 }

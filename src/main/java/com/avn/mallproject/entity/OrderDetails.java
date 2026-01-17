@@ -20,6 +20,10 @@ public class OrderDetails {
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
+    @ManyToOne
+    @JoinColumn(name = "shop_id")
+    private Shop shop;
+
     // OrderDetails → Item (One Order has Many Items)
     @OneToMany(mappedBy = "order")
     private List<Item> items;
@@ -64,6 +68,14 @@ public class OrderDetails {
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
+    }
+
+    public Shop getShop() {
+        return shop;
+    }
+
+    public void setShop(Shop shop) {
+        this.shop = shop;
     }
 
     public List<Item> getItems() {

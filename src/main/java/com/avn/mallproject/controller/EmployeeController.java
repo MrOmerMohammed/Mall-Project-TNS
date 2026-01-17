@@ -9,7 +9,7 @@ import com.avn.mallproject.entity.Employee;
 import com.avn.mallproject.service.EmployeeService;
 
 @RestController
-@RequestMapping("/employees")   // ✅ ADD THIS
+@RequestMapping("/api/employees") // ✅ ADD THIS
 public class EmployeeController {
 
     @Autowired

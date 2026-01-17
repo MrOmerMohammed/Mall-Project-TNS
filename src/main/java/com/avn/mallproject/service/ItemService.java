@@ -1,7 +1,6 @@
 package com.avn.mallproject.service;
 
 import java.util.List;
-
 import com.avn.mallproject.entity.Item;
 
 public interface ItemService {
@@ -9,4 +8,8 @@ public interface ItemService {
     Item addItemToShop(Long shopId, Item item);
 
     List<Item> getItemsByShop(Long shopId);
+
+    Item getItemById(Long itemId);
+
+    void deleteItem(Long itemId);
 }
