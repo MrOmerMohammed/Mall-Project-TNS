@@ -21,4 +21,37 @@ public class MallAdmin {
     @OneToOne
     @JoinColumn(name = "mall_id")
     private Mall mall;
+
+    // Getters and Setters
+    public Long getAdminId() {
+        return adminId;
+    }
+
+    public void setAdminId(Long adminId) {
+        this.adminId = adminId;
+    }
+
+    public String getAdminName() {
+        return adminName;
+    }
+
+    public void setAdminName(String adminName) {
+        this.adminName = adminName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Mall getMall() {
+        return mall;
+    }
+
+    public void setMall(Mall mall) {
+        this.mall = mall;
+    }
 }

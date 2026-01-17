@@ -1,5 +1,7 @@
 package com.avn.mallproject.entity;
 
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,6 +19,15 @@ public class Mall {
     private String mallName;
     private String location;
     private String contactNumber;
+
+    @OneToMany(mappedBy = "mall")
+    private List<Shop> shops;
+
+    @OneToMany(mappedBy = "mall")
+    private List<Employee> employees;
+
+    @OneToOne(mappedBy = "mall")
+    private MallAdmin mallAdmin;
 
     // Getters and Setters
     public Long getMallId() {
@@ -50,12 +61,28 @@ public class Mall {
     public void setContactNumber(String contactNumber) {
         this.contactNumber = contactNumber;
     }
-    @OneToMany(mappedBy = "mall")
-    private List<Shop> shops;
 
-    @OneToMany(mappedBy = "mall")
-    private List<Employee> employees;
+    public List<Shop> getShops() {
+        return shops;
+    }
 
-    @OneToOne(mappedBy = "mall")
-    private MallAdmin mallAdmin;
+    public void setShops(List<Shop> shops) {
+        this.shops = shops;
+    }
+
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
+    }
+
+    public MallAdmin getMallAdmin() {
+        return mallAdmin;
+    }
+
+    public void setMallAdmin(MallAdmin mallAdmin) {
+        this.mallAdmin = mallAdmin;
+    }
 }
