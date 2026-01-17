@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 
 @Entity
 public class ShopOwner {
@@ -14,5 +16,9 @@ public class ShopOwner {
 
     private String ownerName;
     private String contactNumber;
+
+     @OneToOne
+    @JoinColumn(name = "shop_id")
+    private Shop shop;
 }
 
