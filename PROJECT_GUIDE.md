@@ -99,8 +99,8 @@ This project has been updated to use **PostgreSQL** for robust production-grade 
 Your `src/main/resources/application.properties` is already configured for PostgreSQL:
 ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/mall_project
-spring.datasource.username=postgres
-spring.datasource.password=Omer@2004
+spring.datasource.username=your_username
+spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=create
 ```
 *   **Important**: On the very first run, `ddl-auto=create` will drop any existing tables and create new ones. For subsequent production runs, change this to `update` to preserve data.

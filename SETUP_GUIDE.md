@@ -21,7 +21,7 @@ This guide covers the setup and execution of the **Spring Boot Backend** for the
 3.  Update credentials in `src/main/resources/application.properties` if they differ from default:
     ```properties
     spring.datasource.url=jdbc:postgresql://localhost:5432/mall_project
-    spring.datasource.username=postgres
+    spring.datasource.username=your_username
     spring.datasource.password=your_password
     ```
 
@@ -97,8 +97,8 @@ server.port=9090
 # PostgreSQL Configuration
 spring.datasource.url=jdbc:postgresql://localhost:5432/mall_project
 spring.datasource.driver-class-name=org.postgresql.Driver
-spring.datasource.username=postgres
-spring.datasource.password=Omer@2004
+spring.datasource.username=your_username
+spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 ```
 
