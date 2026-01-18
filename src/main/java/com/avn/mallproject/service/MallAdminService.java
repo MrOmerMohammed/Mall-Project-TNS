@@ -12,4 +12,6 @@ public interface MallAdminService {
     List<MallAdmin> getAllMallAdmins();
 
     void deleteMallAdmin(Long adminId);
+
+    MallAdmin getMallAdminByUserId(Long userId);
 }

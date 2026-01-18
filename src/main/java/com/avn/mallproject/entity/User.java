@@ -19,7 +19,32 @@ public class User {
     private String role;
 
     @jakarta.persistence.OneToOne(mappedBy = "user")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private Customer customer;
+
+    @jakarta.persistence.OneToOne(mappedBy = "user")
+    @com.fasterxml.jackson.annotation.JsonIgnore
+    private MallAdmin mallAdmin;
+
+    @jakarta.persistence.OneToOne(mappedBy = "user")
+    @com.fasterxml.jackson.annotation.JsonIgnore
+    private ShopOwner shopOwner;
+
+    public MallAdmin getMallAdmin() {
+        return mallAdmin;
+    }
+
+    public void setMallAdmin(MallAdmin mallAdmin) {
+        this.mallAdmin = mallAdmin;
+    }
+
+    public ShopOwner getShopOwner() {
+        return shopOwner;
+    }
+
+    public void setShopOwner(ShopOwner shopOwner) {
+        this.shopOwner = shopOwner;
+    }
 
     // Getters and Setters
     public Long getUserId() {

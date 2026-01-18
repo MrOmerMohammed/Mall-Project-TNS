@@ -25,16 +25,16 @@ public class Shop {
     @JoinColumn(name = "mall_id")
     private Mall mall;
 
-    @OneToOne(mappedBy = "shop")
+    @OneToOne(mappedBy = "shop", cascade = jakarta.persistence.CascadeType.ALL, orphanRemoval = true)
     private ShopOwner shopOwner;
 
-    @OneToMany(mappedBy = "shop")
+    @OneToMany(mappedBy = "shop", cascade = jakarta.persistence.CascadeType.ALL, orphanRemoval = true)
     private List<Item> items;
 
-    @OneToMany(mappedBy = "shop")
+    @OneToMany(mappedBy = "shop", cascade = jakarta.persistence.CascadeType.ALL, orphanRemoval = true)
     private List<Employee> employees;
 
-    @OneToMany(mappedBy = "shop")
+    @OneToMany(mappedBy = "shop", cascade = jakarta.persistence.CascadeType.ALL, orphanRemoval = true)
     private List<OrderDetails> orders;
 
     // Getters and Setters

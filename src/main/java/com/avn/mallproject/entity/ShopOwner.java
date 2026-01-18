@@ -19,7 +19,20 @@ public class ShopOwner {
 
     @OneToOne
     @JoinColumn(name = "shop_id")
+    @com.fasterxml.jackson.annotation.JsonIgnore // Prevent Infinite Recursion
     private Shop shop;
+
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     // Getters and Setters
     public Long getOwnerId() {
@@ -54,4 +67,3 @@ public class ShopOwner {
         this.shop = shop;
     }
 }
-

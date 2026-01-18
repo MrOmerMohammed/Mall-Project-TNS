@@ -1,6 +1,5 @@
 package com.avn.mallproject.entity;
 
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,7 +19,20 @@ public class MallAdmin {
 
     @OneToOne
     @JoinColumn(name = "mall_id")
+    @com.fasterxml.jackson.annotation.JsonIgnore // Prevent Infinite Recursion
     private Mall mall;
+
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     // Getters and Setters
     public Long getAdminId() {

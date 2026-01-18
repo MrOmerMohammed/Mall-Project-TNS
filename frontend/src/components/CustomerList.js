@@ -26,7 +26,12 @@ function CustomerList() {
     setError(null);
     try {
       const response = await axios.get(API_URL);
-      setCustomers(response.data);
+      if (Array.isArray(response.data)) {
+        setCustomers(response.data);
+      } else {
+        setCustomers([]);
+        console.error("Customer API invalid response", response.data);
+      }
     } catch (err) {
       setError('Failed to fetch customers. Ensure backend is running.');
       console.error(err);
@@ -181,7 +186,7 @@ function CustomerList() {
                 </tr>
               </thead>
               <tbody>
-                {customers.map((customer, index) => (
+                {Array.isArray(customers) && customers.map((customer, index) => (
                   <tr key={customer.customerId} className={index % 2 === 0 ? 'even' : 'odd'}>
                     <td className="id-cell">#{customer.customerId}</td>
                     <td className="name-cell">{customer.customerName}</td>

@@ -12,4 +12,6 @@ public interface ShopOwnerService {
     List<ShopOwner> getAllShopOwners();
 
     void deleteShopOwner(Long ownerId);
+
+    ShopOwner getShopOwnerByUserId(Long userId);
 }

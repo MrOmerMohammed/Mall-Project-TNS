@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.avn.mallproject.entity.ShopOwner;
 
 public interface ShopOwnerRepository extends JpaRepository<ShopOwner, Long> {
+    ShopOwner findByUser_UserId(Long userId);
 }
-

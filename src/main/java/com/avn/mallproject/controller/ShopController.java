@@ -48,4 +48,9 @@ public class ShopController {
     public void deleteShop(@PathVariable Long id) {
         shopService.deleteShop(id);
     }
+
+    @GetMapping("/mall/{mallId}")
+    public List<Shop> getShopsByMall(@PathVariable Long mallId) {
+        return shopService.getShopsByMallId(mallId);
+    }
 }

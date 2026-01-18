@@ -4,6 +4,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.avn.mallproject.entity.Shop;
 
-public interface ShopRepository extends JpaRepository<Shop, Long> {
-}
+import java.util.List;
 
+public interface ShopRepository extends JpaRepository<Shop, Long> {
+    List<Shop> findByMall_MallId(Long mallId);
+}

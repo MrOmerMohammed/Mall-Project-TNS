@@ -14,7 +14,13 @@ const MallExplorer = ({ onSelectMall }) => {
     const fetchMalls = async () => {
         try {
             const response = await axios.get(`${API_BASE_URL}/malls`);
-            setMalls(response.data);
+            console.log("Fetched malls:", response.data);
+            if (Array.isArray(response.data)) {
+                setMalls(response.data);
+            } else {
+                console.error("API did not return an array", response.data);
+                setMalls([]);
+            }
         } catch (err) {
             console.error("Failed to fetch malls", err);
         } finally {
@@ -32,7 +38,7 @@ const MallExplorer = ({ onSelectMall }) => {
             </div>
 
             <div className="malls-grid">
-                {malls.map(mall => (
+                {Array.isArray(malls) && malls.map(mall => (
                     <div key={mall.mallId} className="mall-card interactive" onClick={() => onSelectMall(mall)}>
                         <div className="card-top">
                             <span className="icon-large">🏢</span>

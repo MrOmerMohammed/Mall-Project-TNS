@@ -37,4 +37,9 @@ public class ShopOwnerController {
     public void deleteShopOwner(@PathVariable Long id) {
         shopOwnerService.deleteShopOwner(id);
     }
+
+    @GetMapping("/user/{userId}")
+    public ShopOwner getShopOwnerByUserId(@PathVariable Long userId) {
+        return shopOwnerService.getShopOwnerByUserId(userId);
+    }
 }

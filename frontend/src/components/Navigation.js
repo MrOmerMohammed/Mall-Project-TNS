@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navigation.css';
 
-function Navigation({ setCurrentPage, onLogout }) {
+function Navigation({ user, setCurrentPage, onLogout }) {
   const [activeTab, setActiveTab] = useState('dashboard');
 
   const handleNavClick = (page) => {
@@ -9,16 +9,40 @@ function Navigation({ setCurrentPage, onLogout }) {
     setActiveTab(page);
   };
 
-  const navItems = [
-    { id: 'dashboard', label: 'Dashboard', icon: '📊' },
-    { id: 'malls', label: 'Malls', icon: '🏢' },
-    // Shops and Items are now accessed via Malls -> Drilldown
-    // { id: 'shops', label: 'Shops', icon: '🏪' }, 
-    // { id: 'items', label: 'Inventory', icon: '📦' },
-    { id: 'customers', label: 'Customers', icon: '👥' },
-    { id: 'orders', label: 'Orders', icon: '🧾' }, // Orders might still be useful globally
-    { id: 'employees', label: 'All Staff', icon: '👔' }, // Global staff list is okay for HR view
-  ];
+  // Define menus per role
+  const getNavItems = () => {
+    const role = user ? user.role : 'GUEST';
+
+    if (role === 'SHOP_OWNER') {
+      return [
+        { id: 'shop-owner-dashboard', label: 'My Shop', icon: '🏪' },
+        { id: 'items', label: 'Inventory', icon: '📦' },
+        { id: 'orders', label: 'Orders', icon: '🧾' },
+        { id: 'employees', label: 'My Staff', icon: '👔' },
+      ];
+    } else if (role === 'MALL_ADMIN') {
+      return [
+        { id: 'mall-admin-dashboard', label: 'My Mall', icon: '🏢' },
+        { id: 'employees', label: 'Mall Staff', icon: '👔' },
+        { id: 'customers', label: 'Customers', icon: '👥' }, // Mall level customers?
+        // Maybe a way to view Shops inside dash?
+      ];
+    } else if (role === 'SUPER_ADMIN') {
+      return [
+        { id: 'system-admin-dashboard', label: 'System Overview', icon: '🌐' },
+        { id: 'malls', label: 'All Malls', icon: '🏙️' },
+      ];
+    } else {
+      // Customer or Guest (Original Default)
+      return [
+        { id: 'dashboard', label: 'Home', icon: '🏠' },
+        { id: 'malls', label: 'Explore Malls', icon: '🏙️' },
+        { id: 'orders', label: 'My Orders', icon: '🛍️' },
+      ];
+    }
+  };
+
+  const navItems = getNavItems();
 
   return (
     <nav className="navbar">

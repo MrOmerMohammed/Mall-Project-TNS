@@ -1,6 +1,5 @@
 package com.avn.mallproject.service;
 
-
 import java.util.List;
 
 import com.avn.mallproject.entity.Shop;
@@ -16,4 +15,6 @@ public interface ShopService {
     Shop updateShop(Long shopId, Shop shop);
 
     void deleteShop(Long shopId);
+
+    List<Shop> getShopsByMallId(Long mallId);
 }

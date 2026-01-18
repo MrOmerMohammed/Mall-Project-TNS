@@ -29,7 +29,12 @@ const OrderList = () => {
     const fetchOrders = async () => {
         try {
             const response = await axios.get(`${API_BASE_URL}/orders`);
-            setOrders(response.data);
+            if (Array.isArray(response.data)) {
+                setOrders(response.data);
+            } else {
+                setOrders([]);
+                console.error("Orders API invalid response", response.data);
+            }
         } catch (err) {
             console.error("Fetch orders failed", err);
             // Fallback or empty
@@ -41,14 +46,22 @@ const OrderList = () => {
     const fetchCustomers = async () => {
         try {
             const res = await axios.get(`${API_BASE_URL}/customers`);
-            setCustomers(res.data);
+            if (Array.isArray(res.data)) {
+                setCustomers(res.data);
+            } else {
+                setCustomers([]);
+            }
         } catch (e) { console.error(e); }
     };
 
     const fetchShops = async () => {
         try {
             const res = await axios.get(`${API_BASE_URL}/shops`);
-            setShops(res.data);
+            if (Array.isArray(res.data)) {
+                setShops(res.data);
+            } else {
+                setShops([]);
+            }
         } catch (e) { console.error(e); }
     };
 
@@ -107,7 +120,7 @@ const OrderList = () => {
                             <label>Shop</label>
                             <select name="shopId" value={newOrder.shopId} onChange={handleInputChange} className="form-input">
                                 <option value="">-- Select Shop (Optional) --</option>
-                                {shops.map(s => (
+                                {Array.isArray(shops) && shops.map(s => (
                                     <option key={s.shopId} value={s.shopId}>{s.shopName}</option>
                                 ))}
                             </select>
@@ -149,7 +162,7 @@ const OrderList = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {orders.map((order) => (
+                                    {Array.isArray(orders) && orders.map((order) => (
                                         <tr key={order.orderId}>
                                             <td>#{order.orderId}</td>
                                             <td className="font-medium">

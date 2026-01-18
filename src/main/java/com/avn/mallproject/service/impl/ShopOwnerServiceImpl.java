@@ -43,4 +43,9 @@ public class ShopOwnerServiceImpl implements ShopOwnerService {
     public void deleteShopOwner(Long ownerId) {
         shopOwnerRepository.deleteById(ownerId);
     }
+
+    @Override
+    public ShopOwner getShopOwnerByUserId(Long userId) {
+        return shopOwnerRepository.findByUser_UserId(userId);
+    }
 }

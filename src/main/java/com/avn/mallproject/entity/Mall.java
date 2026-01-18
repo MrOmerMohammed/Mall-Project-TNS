@@ -20,13 +20,13 @@ public class Mall {
     private String location;
     private String contactNumber;
 
-    @OneToMany(mappedBy = "mall")
+    @OneToMany(mappedBy = "mall", cascade = jakarta.persistence.CascadeType.ALL, orphanRemoval = true)
     private List<Shop> shops;
 
-    @OneToMany(mappedBy = "mall")
+    @OneToMany(mappedBy = "mall", cascade = jakarta.persistence.CascadeType.ALL, orphanRemoval = true)
     private List<Employee> employees;
 
-    @OneToOne(mappedBy = "mall")
+    @OneToOne(mappedBy = "mall", cascade = jakarta.persistence.CascadeType.ALL, orphanRemoval = true)
     private MallAdmin mallAdmin;
 
     // Getters and Setters

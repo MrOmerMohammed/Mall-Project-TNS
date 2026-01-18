@@ -37,4 +37,9 @@ public class MallAdminController {
     public void deleteMallAdmin(@PathVariable Long id) {
         mallAdminService.deleteMallAdmin(id);
     }
+
+    @GetMapping("/user/{userId}")
+    public MallAdmin getMallAdminByUserId(@PathVariable Long userId) {
+        return mallAdminService.getMallAdminByUserId(userId);
+    }
 }

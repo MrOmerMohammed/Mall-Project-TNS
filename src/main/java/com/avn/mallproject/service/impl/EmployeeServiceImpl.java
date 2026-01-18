@@ -24,4 +24,19 @@ public class EmployeeServiceImpl implements EmployeeService {
     public List<Employee> getAllEmployees() {
         return employeeRepository.findAll();
     }
+
+    @Override
+    public List<Employee> getEmployeesByMallId(Long mallId) {
+        return employeeRepository.findByMall_MallId(mallId);
+    }
+
+    @Override
+    public List<Employee> getEmployeesByShopId(Long shopId) {
+        return employeeRepository.findByShop_ShopId(shopId);
+    }
+
+    @Override
+    public void deleteEmployee(Long id) {
+        employeeRepository.deleteById(id);
+    }
 }

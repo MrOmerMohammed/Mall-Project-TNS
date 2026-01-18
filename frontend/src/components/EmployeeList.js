@@ -23,7 +23,12 @@ const EmployeeList = () => {
         setLoading(true);
         try {
             const response = await axios.get(`${API_BASE_URL}/employees`);
-            setEmployees(response.data);
+            if (Array.isArray(response.data)) {
+                setEmployees(response.data);
+            } else {
+                setEmployees([]);
+                console.error("Employee API invalid response", response.data);
+            }
             setError(null);
         } catch (err) {
             setError('Failed to fetch employees');
@@ -155,7 +160,7 @@ const EmployeeList = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {employees.map((emp) => (
+                                    {Array.isArray(employees) && employees.map((emp) => (
                                         <tr key={emp.id}>
                                             <td>#{emp.id}</td>
                                             <td className="font-medium">{emp.name}</td>

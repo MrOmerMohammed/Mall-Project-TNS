@@ -1,123 +1,244 @@
+/* Modern SaaS Login Theme */
+:root {
+    --primary: #6c5ce7;
+    --primary-hover: #a29bfe;
+    --bg-dark: #2d3436;
+    --text-main: #2d3436;
+    --text-light: #636e72;
+    --white: #ffffff;
+    --gray-100: #f8f9fa;
+    --gray-200: #dfe6e9;
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f0f2f5;
+}
+
 .login-container {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 100%);
-    font-family: 'Inter', sans-serif;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .login-card {
-    background: white;
-    padding: 3rem;
-    border-radius: 20px;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    background: var(--white);
     width: 100%;
-    max-width: 420px;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
     transition: all 0.3s ease;
+    position: relative;
 }
 
+.login-card.expanded {
+    max-width: 800px;
+    /* Expand for registration */
+}
+
+/* Header */
 .login-header {
     text-align: center;
-    margin-bottom: 2rem;
-}
-
-.login-icon {
-    font-size: 3rem;
-    display: block;
-    margin-bottom: 1rem;
+    padding: 2.5rem 2rem 1rem;
 }
 
 .login-header h1 {
-    font-size: 1.75rem;
-    color: #1e293b;
-    margin-bottom: 0.5rem;
+    color: var(--text-main);
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.02em;
 }
 
 .login-header p {
-    color: #64748b;
+    color: var(--text-light);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Role Grid (The Logic user requested) */
+.role-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 in a row for compactness */
+    gap: 0.5rem;
+    padding: 0 1.5rem 1rem;
+}
+
+.role-card {
+    border: 2px solid var(--gray-200);
+    border-radius: 8px;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: var(--white);
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.role-card:hover {
+    border-color: var(--primary-hover);
+    background: #fdfdff;
+    transform: translateY(-2px);
+}
+
+.role-card.active {
+    border-color: var(--primary);
+    background: rgba(108, 92, 231, 0.05);
+    box-shadow: 0 4px 12px rgba(108, 92, 231, 0.15);
+}
+
+.role-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+    display: block;
+}
+
+.role-name {
+    font-weight: 600;
+    color: var(--text-main);
+    font-size: 0.75rem;
+    /* Smaller text */
+    line-height: 1.1;
+}
+
+/* Form Styles */
+form {
+    padding: 0 2.5rem 2.5rem;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 .form-group label {
     display: block;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--text-main);
     margin-bottom: 0.5rem;
-    font-weight: 500;
-    color: #334155;
-    font-size: 0.9rem;
 }
 
-.form-group input,
-.role-select {
+input,
+select {
     width: 100%;
-    padding: 0.75rem 1rem;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
     font-size: 1rem;
-    transition: all 0.2s;
-    background-color: white;
+    transition: border 0.2s;
+    box-sizing: border-box;
+    /* Fix padding issues */
 }
 
-.form-group input:focus,
-.role-select:focus {
-    border-color: #6366f1;
+input:focus,
+select:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
 }
 
+/* Section Headings */
+h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-light);
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: 0.5rem;
+    margin: 1.5rem 0 1rem;
+}
+
+/* Extra Fields Grid */
+.extra-fields {
+    background: var(--gray-100);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Button */
 .btn-login {
     width: 100%;
-    padding: 0.875rem;
-    background: #4f46e5;
+    padding: 1rem;
+    background: var(--primary);
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     transition: background 0.2s;
+    margin-top: 1rem;
 }
 
 .btn-login:hover {
-    background: #4338ca;
+    background: #5b4cc4;
 }
 
+.btn-login:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Messages */
 .error-msg {
-    color: #ef4444;
+    color: #ff7675;
+    background: rgba(255, 118, 117, 0.1);
+    padding: 0.8rem;
+    border-radius: 8px;
     font-size: 0.9rem;
     text-align: center;
-    margin-bottom: 1rem;
-    background: #fee2e2;
-    padding: 0.5rem;
-    border-radius: 6px;
 }
 
 .success-msg {
-    color: #15803d;
+    color: #00b894;
+    background: rgba(0, 184, 148, 0.1);
+    padding: 0.8rem;
+    border-radius: 8px;
     font-size: 0.9rem;
     text-align: center;
-    margin-bottom: 1rem;
-    background: #dcfce7;
-    padding: 0.5rem;
-    border-radius: 6px;
 }
 
+/* Footer */
 .login-footer {
     text-align: center;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    color: #94a3b8;
+    padding: 1.5rem;
+    background: #fafbfc;
+    border-top: 1px solid var(--gray-200);
 }
 
 .link-text {
-    color: #4f46e5;
-    font-weight: 600;
+    color: var(--primary);
+    font-weight: 700;
     cursor: pointer;
+    margin-left: 0.5rem;
 }
 
 .link-text:hover {
     text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

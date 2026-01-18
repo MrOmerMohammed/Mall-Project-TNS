@@ -43,4 +43,9 @@ public class MallAdminServiceImpl implements MallAdminService {
     public void deleteMallAdmin(Long adminId) {
         mallAdminRepository.deleteById(adminId);
     }
+
+    @Override
+    public MallAdmin getMallAdminByUserId(Long userId) {
+        return mallAdminRepository.findByUser_UserId(userId);
+    }
 }

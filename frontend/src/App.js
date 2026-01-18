@@ -10,6 +10,9 @@ import CustomerList from './components/CustomerList';
 import OrderList from './components/OrderList';
 import EmployeeList from './components/EmployeeList';
 import Login from './components/Login';
+import SystemAdminDashboard from './components/SystemAdminDashboard';
+import MallAdminDashboard from './components/MallAdminDashboard';
+import ShopOwnerDashboard from './components/ShopOwnerDashboard';
 
 function App() {
   const [user, setUser] = useState(null); // Auth State
@@ -22,15 +25,14 @@ function App() {
   const handleLogin = (loggedInUser) => {
     setUser(loggedInUser);
     // Role based redirect
-    // 'role' field depends on User entity output. Assuming uppercase.
     if (loggedInUser.role === 'MALL_ADMIN') {
-      setCurrentPage('malls'); // Direct to Explorer
+      setCurrentPage('mall-admin-dashboard');
     } else if (loggedInUser.role === 'SHOP_OWNER') {
-      // Ideally redirect to THEIR shop. 
-      // effectively 'malls' for now or a filtered view.
-      setCurrentPage('dashboard');
+      setCurrentPage('shop-owner-dashboard');
+    } else if (loggedInUser.role === 'SUPER_ADMIN') {
+      setCurrentPage('system-admin-dashboard');
     } else {
-      setCurrentPage('dashboard');
+      setCurrentPage('dashboard'); // Customer View
     }
   };
 
@@ -76,7 +78,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navigation setCurrentPage={handleNavChange} onLogout={handleLogout} />
+      <Navigation user={user} setCurrentPage={handleNavChange} onLogout={handleLogout} />
       <div className="container">
 
         {/* Header changes based on context */}
@@ -92,6 +94,9 @@ function App() {
         </header>
 
         {currentPage === 'dashboard' && <Dashboard setCurrentPage={handleNavChange} />}
+        {currentPage === 'mall-admin-dashboard' && <MallAdminDashboard user={user} />}
+        {currentPage === 'shop-owner-dashboard' && <ShopOwnerDashboard user={user} />}
+        {currentPage === 'system-admin-dashboard' && <SystemAdminDashboard user={user} />}
 
         {/* Hierarchical Views */}
         {currentPage === 'malls' && <MallExplorer onSelectMall={handleMallSelect} />}
