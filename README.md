@@ -23,7 +23,7 @@ The **Mall Management System** is a Spring Boot-based backend application design
 ## 🏁 Quick Start
 1.  **Clone the repo**:
     ```bash
-    git clone <repository_url>
+    git clone "https://github.com/MrOmerMohammed/Mall-Project-TNS.git"
     ```
 2.  **Configure Database**:
     -   Ensure PostgreSQL is running locally on port `5432`.
