@@ -1,206 +1,118 @@
-# Mall Project - Full Stack Setup Guide
+# Mall Project - Backend Setup Guide
 
 ## 📋 Overview
 
-This is a full-stack application with:
-- **Backend**: Spring Boot 4.0.1 (Java 17) REST API
-- **Frontend**: React 18 web application
+This guide covers the setup and execution of the **Spring Boot Backend** for the Mall Management System.
+- **Framework**: Spring Boot 4.0.1 (Java 17)
+- **Database**: H2 (Development) / PostgreSQL (Production support)
+- **Build Tool**: Maven
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Java 17+ 
-- Node.js 14+ and npm
-- Git
+- **Java Development Kit (JDK) 17** or higher
+- **Maven** (bundled `mvnw` wrapper is included)
+- **Git**
 
-### Step 1: Backend Setup
+### Step 1: Build the Project
+
+Open a terminal in the project root (`mallproject/`) and run:
 
 ```bash
-cd mallproject
-
-# Build the project
+# Windows
 .\mvnw clean package -DskipTests
 
-# Run the Spring Boot application
-.\mvnw spring-boot:run
+# Linux/Mac
+./mvnw clean package -DskipTests
 ```
 
-Backend will be available at: `http://localhost:9090`
+### Step 2: Run the Application
 
-### Step 2: Frontend Setup
-
-In a new terminal:
+Start the Spring Boot server:
 
 ```bash
-cd mallproject/frontend
+# Windows
+.\mvnw spring-boot:run
 
-# Install dependencies
-npm install
-
-# Start development server
-npm start
+# Linux/Mac
+./mvnw spring-boot:run
 ```
 
-Frontend will be available at: `http://localhost:3000`
+The application will start on: `http://localhost:9090`
 
-## 📁 Project Structure
+## � API Endpoints
 
-```
-mallproject/
-├── src/main/java/com/avn/mallproject/
-│   ├── config/
-│   │   └── CorsConfig.java          # CORS configuration
-│   ├── controller/                   # REST Controllers
-│   │   ├── CustomerController.java
-│   │   ├── EmployeeController.java
-│   │   ├── ItemController.java
-│   │   ├── MallController.java
-│   │   ├── OrderController.java
-│   │   ├── ShopController.java
-│   │   └── UserController.java
-│   ├── entity/                       # JPA Entities
-│   ├── repository/                   # Spring Data Repositories
-│   ├── service/                      # Business Logic
-│   └── MallprojectApplication.java   # Main Application
-├── frontend/                         # React Frontend
-│   ├── src/
-│   │   ├── components/               # React Components
-│   │   ├── App.js
-│   │   └── index.js
-│   └── package.json
-└── pom.xml                           # Maven Configuration
-```
+Once the server is running, you can interact with the following endpoints:
 
-## 🔌 API Endpoints
+### User Registration (Onboarding)
+- `POST /api/register/mall-admin` - Register a new Mall Administrator
+- `POST /api/register/shop-owner` - Register a new Shop Owner
 
 ### Malls
-- `GET /api/malls` - Get all malls
-- `POST /api/malls` - Create new mall
-- `GET /api/malls/{id}` - Get mall by ID
-- `PUT /api/malls/{id}` - Update mall
-- `DELETE /api/malls/{id}` - Delete mall
+- `GET /api/malls` - List all malls
+- `POST /api/malls` - Create a new mall
+- `PUT /api/malls/{id}` - Update mall details
+- `DELETE /api/malls/{id}` - Remove a mall
 
 ### Shops
-- `GET /api/shops` - Get all shops
-- `POST /api/shops` - Create new shop
-- `GET /api/shops/{id}` - Get shop by ID
-- `PUT /api/shops/{id}` - Update shop
-- `DELETE /api/shops/{id}` - Delete shop
+- `GET /api/shops` - List all shops
+- `POST /api/shops` - Register a new shop
+- `PUT /api/shop/{id}` - Update shop details
 
-### Customers
-- `GET /customers` - Get all customers
-- `POST /customers` - Create new customer
-- `GET /customers/{id}` - Get customer by ID
-- `PUT /customers/{id}` - Update customer
-- `DELETE /customers/{id}` - Delete customer
+### Items (Inventory)
+- `POST /items/shop/{shopId}` - Add an item to a specific shop
+- `GET /items/shop/{shopId}` - View inventory of a shop
 
-### Employees
-- `GET /employees` - Get all employees
-- `POST /employees` - Add employee
+### Orders
+- `POST /api/orders` - Place a new order
+- `GET /api/orders` - View all orders
 
-### Items
-- `POST /items/shop/{shopId}` - Add item to shop
-- `GET /items/shop/{shopId}` - Get items by shop
+## �️ Database Access
 
-## 🛠️ Development
-
-### Backend Development
-
-1. Make changes to Java files
-2. Rebuild: `.\mvnw clean compile`
-3. Restart the application
-
-### Frontend Development
-
-1. Make changes to React components
-2. Changes auto-reload at `http://localhost:3000`
-3. Build for production: `npm run build`
-
-## 📦 Building for Production
-
-### Backend
-```bash
-.\mvnw clean package -DskipTests
-```
-
-Creates: `target/mallproject-0.0.1-SNAPSHOT.jar`
-
-### Frontend
-```bash
-cd frontend
-npm run build
-```
-
-The production build is automatically copied to Spring Boot's static folder.
+### H2 Console (Development)
+The project uses an in-memory H2 database for development.
+- **URL**: `http://localhost:9090/h2-console`
+- **JDBC URL**: `jdbc:h2:mem:testdb` (check application.properties if different)
+- **Username**: `sa`
+- **Password**: (Empty)
 
 ## ⚙️ Configuration
 
-### Application Properties
+Application settings are located in `src/main/resources/application.properties`.
 
-Edit `src/main/resources/application.properties`:
-
+### Default Configuration
 ```properties
-# Server Configuration
+# Server Port
 server.port=9090
 
-# Database Configuration
-spring.datasource.url=jdbc:mysql://localhost:3306/malldb
-spring.datasource.username=root
-spring.datasource.password=your_password
-
-# JPA Configuration
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.generate-ddl=true
+# H2 Database Config
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
 ```
+
+## �️ Development Workflow
+
+1.  **Modify Code**: Edit Java files in `src/main/java/com/avn/mallproject`.
+2.  **Hot Reload**: If using an IDE like IntelliJ IDEA or Eclipse, changes often reload automatically.
+3.  **Manual Rebuild**:
+    ```bash
+    .\mvnw clean compile
+    ```
 
 ## 🐛 Troubleshooting
 
-### Frontend can't connect to backend
-- Ensure backend is running on port 9090
-- Check browser console for CORS errors
-- Verify CorsConfig.java is properly loaded
-
-### Port already in use
-```bash
-# Change frontend port (in package.json)
-"start": "PORT=3001 react-scripts start"
-
-# Change backend port (in application.properties)
+### Port 9090 already in use?
+Edit `application.properties` and change `server.port`:
+```properties
 server.port=8081
 ```
 
-### npm install fails
-```bash
-# Clear npm cache
-npm cache clean --force
-
-# Delete node_modules and reinstall
-rm -rf frontend/node_modules
-cd frontend && npm install
-```
-
-## 📝 Notes
-
-- The frontend will be served from the backend's static folder when deployed
-- CORS is configured to allow requests from `localhost:3000`
-- Database schema is auto-generated on first run (H2 in-memory by default)
-
-## 📚 Technologies
-
-- **Backend**: Spring Boot, Spring Data JPA, Jakarta Persistence
-- **Frontend**: React 18, Axios, CSS3
-- **Build**: Maven (Backend), npm (Frontend)
-- **Database**: H2 (Development), MySQL/PostgreSQL (Production)
-
-## 🔒 Security Notes
-
-- Update CORS allowed origins for production
-- Add authentication/authorization
-- Use HTTPS in production
-- Validate all user inputs
-- Use environment variables for sensitive data
+### Database connection fails?
+Ensure no other instance of the application is running. For production databases (PostgreSQL/MySQL), verify the credentials in `application.properties`.
 
 ---
-
 **Happy Coding! 🚀**

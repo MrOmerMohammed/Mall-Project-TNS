@@ -1,0 +1,48 @@
+# Mall Management System Backend
+
+## 📌 Project Overview
+The **Mall Management System** is a Spring Boot-based backend application designed to streamline operations for malls, shops, and customers. It facilitates:
+-   **Mall Administration**: Managing mall profiles, locations, and infrastructure.
+-   **Tenant Management**: Onboarding shops and assigning Shop Owners.
+-   **Inventory & Sales**: Managing products (items) and processing customer orders.
+-   **Role-Based Access**: Secure environments for Admins, Shop Owners, and Customers.
+
+## 🚀 Key Features
+-   **User Onboarding**: Dedicated APIs for Mall Admins and Shop Owners.
+-   **Dynamic Inventory**: Shop-specific item management.
+-   **Order Processing**: End-to-end B2C transaction flow.
+-   **Scalable Architecture**: Built on Spring Boot with PostgreSQL support.
+
+## 🛠️ Technology Stack
+-   **Java 17**
+-   **Spring Boot 4.0.1**
+-   **Spring Data JPA / Hibernate**
+-   **PostgreSQL** (Production) / **H2** (Dev)
+-   **Maven**
+
+## 🏁 Quick Start
+1.  **Clone the repo**:
+    ```bash
+    git clone <repository_url>
+    ```
+2.  **Build the project**:
+    ```bash
+    ./mvnw clean package -DskipTests
+    ```
+3.  **Run the application**:
+    ```bash
+    ./mvnw spring-boot:run
+    ```
+4.  **Access API**: Base URL `http://localhost:9090`
+
+## 📚 Documentation
+For detailed guides, please refer to:
+-   [Setup Guide](SETUP_GUIDE.md) - Instructions for running the project.
+-   **Project Guide** - Comprehensive internal documentation (created as an artifact).
+
+## 🧪 Testing
+-   **Postman**: Use the provided Postman workflows in the Project Guide to test the API from scratch.
+-   **H2 Console**: Access the dev database at `http://localhost:9090/h2-console` (User: `sa`, Pass: empty).
+
+---
+**Happy Coding!**
