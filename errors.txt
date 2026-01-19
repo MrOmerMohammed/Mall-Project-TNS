@@ -1,0 +1,1549 @@
+﻿
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766) ~[spring-beans
+-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747) ~[sp
+ring-beans-7.0.2.jar:
+7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146) ~
+[spring-beans-7.0.2.j
+ar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492) ~[spring-be
+ans-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446) ~[spr
+ing-beans-7.0.2.jar:7
+.0.2]
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766) ~[spring-beans
+-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747) ~[sp
+ring-beans-7.0.2.jar:
+7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146) ~
+[spring-beans-7.0.2.j
+ar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492) ~[spring-be
+ans-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446) ~[spr
+ing-beans-7.0.2.jar:7
+.0.2]
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766) ~[spring-beans
+-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747) ~[sp
+ring-beans-7.0.2.jar:
+7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146) ~
+[spring-beans-7.0.2.j
+ar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492) ~[spring-be
+ans-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446) ~[spr
+ing-beans-7.0.2.jar:7
+.0.2]
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766) ~[spring-beans
+-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747) ~[sp
+ring-beans-7.0.2.jar:
+7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146) ~
+[spring-beans-7.0.2.j
+ar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492) ~[spring-be
+ans-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446) ~[spr
+ing-beans-7.0.2.jar:7
+.0.2]
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766) ~[spring-beans
+-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747) ~[sp
+ring-beans-7.0.2.jar:
+7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146) ~
+[spring-beans-7.0.2.j
+ar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492) ~[spring-be
+ans-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446) ~[spr
+ing-beans-7.0.2.jar:7
+.0.2]
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766) ~[spring-beans
+-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747) ~[sp
+ring-beans-7.0.2.jar:
+7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146) ~
+[spring-beans-7.0.2.j
+ar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492) ~[spring-be
+ans-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446) ~[spr
+ing-beans-7.0.2.jar:7
+.0.2]
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766) ~[spring-beans
+-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747) ~[sp
+ring-beans-7.0.2.jar:
+7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146) ~
+[spring-beans-7.0.2.j
+ar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492) ~[spring-be
+ans-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446) ~[spr
+ing-beans-7.0.2.jar:7
+.0.2]
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766) ~[spring-beans
+-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747) ~[sp
+ring-beans-7.0.2.jar:
+7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146) ~
+[spring-beans-7.0.2.j
+ar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492) ~[spring-be
+ans-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446) ~[spr
+ing-beans-7.0.2.jar:7
+.0.2]
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766) ~[spring-beans
+-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747) ~[sp
+ring-beans-7.0.2.jar:
+7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146) ~
+[spring-beans-7.0.2.j
+ar:7.0.2]
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492) ~[spring-be
+ans-7.0.2.jar:7.0.2]
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446) ~[spr
+ing-beans-7.0.2.jar:7
+.0.2]
+> [ERROR] Tests run: 
+9, Failures: 0, 
+Errors: 9, Skipped: 
+0, Time elapsed: 
+9.581 s <<< FAILURE! 
+-- in com.avn.mallpro
+ject.MallprojectAppli
+cationTests
+> [ERROR] com.avn.mal
+lproject.MallprojectA
+pplicationTests.conte
+xtLoads -- Time 
+elapsed: 0.037 s <<< 
+ERROR!
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747)
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492)
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446)
+> [ERROR] com.avn.mal
+lproject.MallprojectA
+pplicationTests.testC
+reateMall -- Time 
+elapsed: 0.016 s <<< 
+ERROR!
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747)
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492)
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446)
+> [ERROR] com.avn.mal
+lproject.MallprojectA
+pplicationTests.testG
+etMall -- Time 
+elapsed: 0.007 s <<< 
+ERROR!
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747)
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492)
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446)
+> [ERROR] com.avn.mal
+lproject.MallprojectA
+pplicationTests.testG
+etAllMalls -- Time 
+elapsed: 0.004 s <<< 
+ERROR!
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747)
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492)
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446)
+> [ERROR] com.avn.mal
+lproject.MallprojectA
+pplicationTests.testC
+reateShop -- Time 
+elapsed: 0.003 s <<< 
+ERROR!
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747)
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492)
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446)
+> [ERROR] com.avn.mal
+lproject.MallprojectA
+pplicationTests.testG
+etShopsByMall -- 
+Time elapsed: 0.004 
+s <<< ERROR!
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747)
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492)
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446)
+> [ERROR] com.avn.mal
+lproject.MallprojectA
+pplicationTests.testC
+reateCustomer -- 
+Time elapsed: 0.002 
+s <<< ERROR!
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747)
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492)
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446)
+> [ERROR] com.avn.mal
+lproject.MallprojectA
+pplicationTests.testC
+reateItem -- Time 
+elapsed: 0.003 s <<< 
+ERROR!
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747)
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492)
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446)
+> [ERROR] com.avn.mal
+lproject.MallprojectA
+pplicationTests.testC
+reateOrder -- Time 
+elapsed: 0.002 s <<< 
+ERROR!
+> org.springframework
+.beans.factory.Unsati
+sfiedDependencyExcept
+ion: Error creating 
+bean with name 'com.a
+vn.mallproject.Mallpr
+ojectApplicationTests
+': Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.resolveFieldValu
+e(AutowiredAnnotation
+BeanPostProcessor.jav
+a:766)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor$AutowiredFieldEle
+ment.inject(Autowired
+AnnotationBeanPostPro
+cessor.java:747)
+  	at org.springframe
+work.beans.factory.an
+notation.InjectionMet
+adata.inject(Injectio
+nMetadata.java:146)
+  	at org.springframe
+work.beans.factory.an
+notation.AutowiredAnn
+otationBeanPostProces
+sor.postProcessProper
+ties(AutowiredAnnotat
+ionBeanPostProcessor.
+java:492)
+  	at org.springframe
+work.beans.factory.su
+pport.AbstractAutowir
+eCapableBeanFactory.p
+opulateBean(AbstractA
+utowireCapableBeanFac
+tory.java:1446)
+> [ERROR] Errors: 
+> [ERROR]   Mallproje
+ctApplicationTests.co
+ntextLoads » Unsatisf
+iedDependency Error 
+creating bean with 
+name 'com.avn.mallpro
+ject.MallprojectAppli
+cationTests': 
+Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+> [ERROR]   Mallproje
+ctApplicationTests.te
+stCreateCustomer » Un
+satisfiedDependency 
+Error creating bean 
+with name 'com.avn.ma
+llproject.Mallproject
+ApplicationTests': 
+Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+> [ERROR]   Mallproje
+ctApplicationTests.te
+stCreateItem » Unsati
+sfiedDependency 
+Error creating bean 
+with name 'com.avn.ma
+llproject.Mallproject
+ApplicationTests': 
+Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+> [ERROR]   Mallproje
+ctApplicationTests.te
+stCreateMall » Unsati
+sfiedDependency 
+Error creating bean 
+with name 'com.avn.ma
+llproject.Mallproject
+ApplicationTests': 
+Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+> [ERROR]   Mallproje
+ctApplicationTests.te
+stCreateOrder » Unsat
+isfiedDependency 
+Error creating bean 
+with name 'com.avn.ma
+llproject.Mallproject
+ApplicationTests': 
+Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+> [ERROR]   Mallproje
+ctApplicationTests.te
+stCreateShop » Unsati
+sfiedDependency 
+Error creating bean 
+with name 'com.avn.ma
+llproject.Mallproject
+ApplicationTests': 
+Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+> [ERROR]   Mallproje
+ctApplicationTests.te
+stGetAllMalls » Unsat
+isfiedDependency 
+Error creating bean 
+with name 'com.avn.ma
+llproject.Mallproject
+ApplicationTests': 
+Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+> [ERROR]   Mallproje
+ctApplicationTests.te
+stGetMall » Unsatisfi
+edDependency Error 
+creating bean with 
+name 'com.avn.mallpro
+ject.MallprojectAppli
+cationTests': 
+Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+> [ERROR]   Mallproje
+ctApplicationTests.te
+stGetShopsByMall » Un
+satisfiedDependency 
+Error creating bean 
+with name 'com.avn.ma
+llproject.Mallproject
+ApplicationTests': 
+Unsatisfied 
+dependency expressed 
+through field 
+'objectMapper': No 
+qualifying bean of 
+type 'com.fasterxml.j
+ackson.databind.Objec
+tMapper' available: 
+expected at least 1 
+bean which qualifies 
+as autowire 
+candidate. 
+Dependency 
+annotations: {@org.sp
+ringframework.beans.f
+actory.annotation.Aut
+owired(required=true)
+}
+  [INFO] 
+> [ERROR] Tests run: 
+9, Failures: 0, 
+Errors: 9, Skipped: 0
+  [INFO] 
+  [INFO] ------------
+---------------------
+---------------------
+------------------
+  [INFO] BUILD 
+FAILURE
+  [INFO] ------------
+---------------------
+---------------------
+------------------
+  [INFO] Total time: 
+ 16.508 s
+> [ERROR] Failed to 
+execute goal org.apac
+he.maven.plugins:mave
+n-surefire-plugin:3.5
+.4:test 
+(default-test) on 
+project mallproject: 
+> [ERROR] 
+> [ERROR] See 
+D:\PROGRAMMING\TNSIF 
+BACKEND\Java Project\
+MallProject\mallproje
+ct\target\surefire-re
+ports for the 
+individual test 
+results.
+> [ERROR] See dump 
+files (if any exist) 
+[date].dump, [date]-j
+vmRun[N].dump and 
+[date].dumpstream.
+> [ERROR] -> [Help 1]
+> [ERROR] 
+> [ERROR] To see the 
+full stack trace of 
+the errors, re-run 
+Maven with the -e 
+switch.
+> [ERROR] Re-run 
+Maven using the -X 
+switch to enable 
+full debug logging.
+> [ERROR] 
+> [ERROR] For more 
+information about 
+the errors and 
+possible solutions, 
+please read the 
+following articles:
+> [ERROR] [Help 1] ht
+tp://cwiki.apache.org
+/confluence/display/M
+AVEN/MojoFailureExcep
+tion
+
+

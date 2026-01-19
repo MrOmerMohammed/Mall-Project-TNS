@@ -1,9 +1,12 @@
 package com.avn.mallproject.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.avn.mallproject.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
-}
+    User findByUsername(String username);
 
+    List<User> findByRole(String role);
+}

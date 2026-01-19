@@ -1,10 +1,8 @@
 package com.avn.mallproject.service.impl;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.avn.mallproject.entity.User;
 import com.avn.mallproject.repository.UserRepository;
 import com.avn.mallproject.service.UserService;
@@ -49,18 +47,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User loginUser(String username, String password) {
-        // Find user by username (Assuming repository has findByUsername or we iterate)
-        // Since UserRepository might not have findByUsername yet, let's check.
-        // If not, we can implement it or just iterate all for now (inefficient but
-        // works for MVP)
-        // Better: Let's assume we can add findByUsername to Repo or use Example.
-        // Checking existing code... likely need to add it to Repo.
-        // For safety and speed without viewing Repo file, I'll use streams on findAll
-        // for this MVP step
-        // as the dataset is tiny.
-        return userRepository.findAll().stream()
-                .filter(u -> u.getUsername().equals(username) && u.getPassword().equals(password))
-                .findFirst()
-                .orElse(null);
+        User user = userRepository.findByUsername(username);
+        if (user != null && user.getPassword().equals(password)) {
+            return user;
+        }
+        return null;
     }
 }
